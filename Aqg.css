@@ -1,137 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
- html, body {
-	 text-align: center;
-	 min-width: 100%;
-	 font-family: 'Roboto', sans-serif;
-	 background-color: #ebebeb;
-	 position: relative;
-	 padding: 0;
-	 margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html,
+body {
+  text-align: center;
+  min-width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
- .container {
-	 position: relative;
-	 max-width: 70%;
-	 margin: auto;
+
+.container {
+  position: relative;
+  max-width: 70%;
+  margin: auto;
 }
- .choose-level {
-	 position: absolute;
-	 background-color: black;
-	 height: 100vh;
-	 width: 100vw;
-	 padding: 0;
-	 margin: 0;
-	 color: white;
+
+.choose-level {
+  position: absolute;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  color: white;
 }
- .choose-level h1 {
-	 margin-top: 20vh;
+.choose-level h1 {
+  margin-top: 20vh;
 }
- .choose-level button {
-	 margin: 10px;
+.choose-level button {
+  margin: 10px;
 }
- .container-advanced {
-	 display: none;
+
+.container-advanced {
+  display: none;
 }
- .container-beginner {
-	 display: none;
+
+.container-beginner {
+  display: none;
 }
- .circle {
-	 opacity: 0;
+
+.circle {
+  opacity: 0;
 }
- .land {
-	 fill: #2faa9f;
-	 fill-opacity: 1;
-	 stroke: #ebebeb;
-	 stroke-opacity: 1;
-	 stroke-width: 0.5;
-	 stroke-miterlimit: 3.97446823;
-	 stroke-dasharray: none;
+
+.land {
+  fill: #2faa9f;
+  fill-opacity: 1;
+  stroke: #ebebeb;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+  stroke-miterlimit: 3.97446823;
+  stroke-dasharray: none;
 }
- button {
-	 position: relative;
-	 display: inline-grid;
-	 top: 50%;
-	 padding: 10px;
-	 font-size: 20px;
-	 border-radius: 10px;
+
+button {
+  position: relative;
+  display: inline-grid;
+  top: 50%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
 }
- #answer, #answer-beginner {
-	 position: relative;
-	 padding: 10px;
-	 font-size: 16px;
-	 display: none;
-	 top: 40vh;
+
+#answer,
+#answer-beginner {
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  display: none;
+  top: 40vh;
 }
- #score-beginner {
-	 position: relative;
-	 padding: 10px;
-	 margin: auto;
+
+#score-beginner {
+  position: relative;
+  padding: 10px;
+  margin: auto;
 }
- .attribution {
-	 position: fixed;
-	 bottom: 0px;
-	 font-size: 14px;
+
+.attribution {
+  position: fixed;
+  bottom: 0px;
+  font-size: 14px;
 }
- .attribution a {
-	 text-decoration: none;
-	 color: black;
+.attribution a {
+  text-decoration: none;
+  color: black;
 }
- .map {
-	 position: relative;
-	 padding-top: 30px;
-	 max-width: 80%;
+
+.map {
+  position: relative;
+  padding-top: 30px;
+  max-width: 80%;
 }
- #quiz-container {
-	 display: none;
-	 grid-template-columns: 60% 40%;
+
+#quiz-container {
+  display: none;
+  grid-template-columns: 60% 40%;
 }
- #beginner-start {
-	 margin-top: 20vh;
+
+#beginner-start {
+  margin-top: 20vh;
 }
- .container-advanced, .container-beginner {
-	 height: 100vh;
-	 padding: 20px;
+
+.container-advanced,
+.container-beginner {
+  height: 100vh;
+  padding: 20px;
 }
- .container-advanced button, .container-beginner button {
-	 position: relative;
-	 top: 40vh;
+.container-advanced button,
+.container-beginner button {
+  position: relative;
+  top: 40vh;
 }
- #game-over {
-	 display: none;
+
+#game-over {
+  display: none;
 }
- #game-over #game-over-score {
-	 padding-top: 50px;
+#game-over #game-over-score {
+  padding-top: 50px;
 }
- #time, #time2 {
-	 font-size: 22px;
-	 color: red;
+
+#time,
+#time2 {
+  font-size: 22px;
+  color: red;
 }
- #score, #score-beginner {
-	 font-size: 22px;
+
+#score,
+#score-beginner {
+  font-size: 22px;
 }
- @media only screen and (max-width: 600px) {
-	 #quiz-container {
-		 grid-template-columns: 100%;
-	}
-	 .map {
-		 width: 100%;
-	}
-	 .container-advanced, .container-beginner {
-		 height: 100vh;
-		 padding: 20px;
-	}
-	 .container-advanced button, .container-beginner button {
-		 position: relative;
-		 top: 10px;
-	}
-	 .container-advanced #beginner-start, .container-beginner #beginner-start {
-		 margin-top: 0px;
-	}
-	 #answer, #answer-beginner {
-		 position: relative;
-		 padding: 10px;
-		 font-size: 16px;
-		 display: none;
-		 top: 10px;
-	}
+
+@media only screen and (max-width: 600px) {
+  #quiz-container {
+    grid-template-columns: 100%;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .container-advanced,
+  .container-beginner {
+    height: 100vh;
+    padding: 20px;
+  }
+  .container-advanced button,
+  .container-beginner button {
+    position: relative;
+    top: 10px;
+  }
+  .container-advanced #beginner-start,
+  .container-beginner #beginner-start {
+    margin-top: 0px;
+  }
+
+  #answer,
+  #answer-beginner {
+    position: relative;
+    padding: 10px;
+    font-size: 16px;
+    display: none;
+    top: 10px;
+  }
 }
- 
